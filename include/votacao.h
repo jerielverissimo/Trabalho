@@ -5,15 +5,6 @@
 #include <stdlib.h>
 #include <stdio_ext.h>
 
-typedef struct Palamentar{
-
-  int codPalamentar;
-  // Partidos partido;
-  char estado[2];
-  char sexo;
-
-} Palamentar;
-
 typedef struct Voto {
 
   int vSim;
@@ -22,6 +13,17 @@ typedef struct Voto {
   int tVotos;
 
 } Voto;
+
+typedef struct Palamentar{
+
+  int codPalamentar;
+  // Partidos partido;
+  char estado[2];
+  char sexo;
+  Voto votos;
+} Palamentar;
+
+
 
 
 
