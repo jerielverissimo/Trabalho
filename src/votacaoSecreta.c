@@ -50,14 +50,14 @@ void votacaoSecreta(){
 
 void encerrarVotacaoSecreta(Voto votos, int votantes){
 
-  int votacaoValida ;
+  int votacaoValida = 1;
   float votosValidos = 0;
 
   votos.tVotos = votos.vSim + votos.vNao;
   votos.abestencoes = votantes - votos.tVotos;
   votosValidos = (float) ((float) votos.tVotos / (float) votantes) * 100;
 
-  (votosValidos >= 50 + 1) ? votacaoValida = 0 : votacaoValida = 1;
+  (votosValidos >= 50 + 1) ? votacaoValida = 0 : votacaoValida;
 
   printf("\t\t+-----------------------------------------------+\n");
   printf("\t\t|\t\t\t\t\t\t|\n");
