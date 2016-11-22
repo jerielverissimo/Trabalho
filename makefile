@@ -6,7 +6,7 @@ SRCDIR = ./src/
 
 SOUCERS = $(SRCDIR)*.c
 
-all: votacao run clean
+all: votacao run
 
 votacao:
 	$(CC) $(SOUCERS) $(CFLAGS) -o $@
