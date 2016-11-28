@@ -31,10 +31,11 @@ typedef struct Palamentar{
 
 
 
-/* libs */
+/* Cross-Compile */
 
 void limpaTela(); // limparTela.h
 void clearBuffer(); // clearBuffer.h
+void pausaTela (); // pausaTela.h
 
 /* Menus */
 void menuPrincipal();
