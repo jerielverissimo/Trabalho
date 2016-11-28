@@ -79,5 +79,7 @@ void encerrarVotacaoSecreta(Voto votos, int votantes){
 
   printf("--------------------------------------------------------------------------------\n");
 
+  pausaTela(); // windows
+
 
 }
