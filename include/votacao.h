@@ -11,7 +11,7 @@
 #endif
 
 
-
+/* Class */
 
 typedef struct Voto {
 
@@ -23,19 +23,20 @@ typedef struct Voto {
 } Voto;
 
 typedef struct Partido {
+
   char *siglaPartido;
+
 } Partido;
 
 typedef struct Palamentar{
 
   int codPalamentar;
   Partido partidos;
-  char estado[2];
+  char *estado;
   char sexo;
   Voto votos;
+
 } Palamentar;
-
-
 
 
 
@@ -56,5 +57,6 @@ void votacaoSecreta();
 
 /* votação aberta */
 void votacaoAberta();
+void getPartidos();
 
 #endif
