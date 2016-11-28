@@ -17,7 +17,7 @@ void votacaoAberta() {
 
   for (i = 0; i < nVotantes; i++) {
     do {
-      printf("\n\n Insira o cÃ³digo do palamentar: ");
+      printf("\n\n Insira o código do palamentar: ");
       scanf("%d", &parlamentares ->codPalamentar);
 
       printf("\n\n Escolha o partido: ");
@@ -30,7 +30,7 @@ void votacaoAberta() {
 
           break;
       }
-      printf("\n\n [1] - Voto sim: \n [2] - Voto nÃ£o: \n [3] - Encerrar a votaÃ§Ã£o: \n\n %dÂº votante  OPC: ", i + 1);
+      printf("\n\n [1] - Voto sim: \n [2] - Voto não: \n [3] - Encerrar a votação: \n\n %dNº votante  OPC: ", i + 1);
       opc = getchar();
       clearBuffer();
       limpaTela();

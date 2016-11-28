@@ -13,14 +13,14 @@ void menuVotacao(){
 
     printf("\t\t+-----------------------------------------------+\n");
     printf("\t\t|\t\t\t\t\t\t|\n");
-    printf("\t\t|\t\t Menu Vota√ß√£o \t\t\t|\n");
+    printf("\t\t|\t\t Menu VotaÁ„o \t\t\t|\n");
     printf("\t\t|\t\t\t\t\t\t|\n");
     printf("\t\t+-----------------------------------------------+\n");
 
     printf("\n\n\n");
     printf("--------------------------------------------------------------------------------\n\n");
-    printf(" [0] - Vota√ß√£o Secreta\n");
-    printf(" [1] - Vota√ß√£o Aberta\n");
+    printf(" [0] - VotaÁ„o Secreta\n");
+    printf(" [1] - VotaÁ„o Aberta\n");
     printf(" [2] - Voltar ao menu anterior\n\n");
 
     printf(" OPC: ");
@@ -42,7 +42,7 @@ void menuVotacao(){
         menuPrincipal();
         break;
       default:
-        printf("\n Por favor selecione uma op√ß√£o v√°lida! \n");
+        printf("\n Por favor selecione uma opÁ„o v·lida! \n");
         flag = 1;
     }
   } while(opc != '0' && opc != '1' && opc !=  '2');
@@ -90,8 +90,8 @@ void menuPrincipal(){
         exit(0);
         break;
       default:
-        printf("\n Por favor selecione uma op√ß√£o v√°lida! \n");
-      
+        printf("\n Por favor selecione uma opÁ„o v·lida! \n");
+
         flag = 1;
     }
   } while(opc != '0' && opc != '1');

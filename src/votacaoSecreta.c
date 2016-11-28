@@ -17,7 +17,7 @@ void votacaoSecreta(){
 
     do {
 
-      printf("\n\n [1] - Voto sim: \n [2] - Voto nÃ£o: \n [3] - Encerrar a votaÃ§Ã£o: \n\n %dÂº votante  OPC: ", i + 1);
+      printf("\n\n [1] - Voto sim: \n [2] - Voto não: \n [3] - Encerrar a votação: \n\n %dNº votante  OPC: ", i + 1);
       opc = getchar();
       clearBuffer();
       limpaTela();
@@ -35,7 +35,7 @@ void votacaoSecreta(){
             i = nVotantes;
           break;
         default:
-          printf("\n Por favor selecione uma opÃ§Ã£o vÃ¡lida! \n");
+          printf("\n Por favor selecione uma opção válida! \n");
       }
     } while(opc != '1' && opc != '2' && opc != '3');
 
@@ -61,21 +61,21 @@ void encerrarVotacaoSecreta(Voto votos, int votantes){
 
   printf("\t\t+-----------------------------------------------+\n");
   printf("\t\t|\t\t\t\t\t\t|\n");
-  printf("\t\t|\t     Resultado da votaÃ§Ã£o \t\t|\n");
+  printf("\t\t|\t     Resultado da votação \t\t|\n");
   printf("\t\t|\t\t\t\t\t\t|\n");
   printf("\t\t+-----------------------------------------------+\n");
 
   printf("\n\t\t\t Quantidade de sim: \t\t%2d", votos.vSim);
-  printf("\n\t\t\t Quantidade de nÃ£o: \t\t%2d", votos.vNao);
-  printf("\n\t\t\t AbestenÃ§Ãµes: \t\t\t%2d", votos.abestencoes);
+  printf("\n\t\t\t Quantidade de não: \t\t%2d", votos.vNao);
+  printf("\n\t\t\t Abestenções: \t\t\t%2d", votos.abestencoes);
   printf("\n\t\t\t Votantes: \t\t\t%2d", votantes);
 
-  if (votacaoValida == 0) printf("\n\n\t VotaÃ§Ã£o vÃ¡lida!\n");
-  else printf("\n\n\t VotaÃ§Ã£o invÃ¡lida, votos insuficientes!\n");
+  if (votacaoValida == 0) printf("\n\n\t votação válida!\n");
+  else printf("\n\n\t votação inválida, votos insuficientes!\n");
 
   if (votos.vSim > votos.vNao) printf("\t Hove maioria para sim\n\n");
-  else if (votos.vNao > votos.vSim) printf("\t Hove maioria para nÃ£o\n\n");
-  else printf("\t Hove empate entre sim e nÃ£o\n\n");
+  else if (votos.vNao > votos.vSim) printf("\t Hove maioria para não\n\n");
+  else printf("\t Hove empate entre sim e não\n\n");
 
   printf("--------------------------------------------------------------------------------\n");
 
