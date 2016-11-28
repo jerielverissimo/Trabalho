@@ -7,8 +7,8 @@ void pausaTela () {
     system("pause");
   #endif
 
-  #ifdef _WIN32
-    system("pause");
-  #endif
+  // #ifdef _WIN32
+  //   system("pause");
+  // #endif
 
 }

@@ -11,8 +11,8 @@ void limpaTela(){
       system("cls");
     #endif
 
-    #ifdef _WIN32
-      system("cls");
-    #endif
+    // #ifdef _WIN32
+    //   system("cls");
+    // #endif
 
 }
