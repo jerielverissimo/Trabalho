@@ -2,6 +2,8 @@
 
 void votacaoAberta() {
 
+  setLingua();
+
   int nVotantes, i, vSim = 0, vNao = 0;
   char opc;
 

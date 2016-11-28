@@ -10,8 +10,8 @@ void clearBuffer(){
     fflush(stdin);
   #endif
 
-  // #ifdef _WIN32
-  //   fflush(stdin);
-  // #endif
+  #ifdef _WIN32
+    fflush(stdin);
+  #endif
 
 }

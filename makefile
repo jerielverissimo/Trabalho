@@ -17,4 +17,4 @@ run:
 	./votacao
 
 clean:
-	rm -f votacao
+	rm -f votacao votacao.exe

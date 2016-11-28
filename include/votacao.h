@@ -40,6 +40,7 @@ typedef struct Palamentar{
 void limpaTela(); // limparTela.h
 void clearBuffer(); // clearBuffer.h
 void pausaTela (); // pausaTela.h
+void setLingua(); // config para portugues (windows)
 
 /* Menus */
 void menuPrincipal();

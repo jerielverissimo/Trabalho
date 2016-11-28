@@ -101,9 +101,7 @@ void menuPrincipal(){
 
 int main(int argc, char const *argv[]) {
 
-  #ifndef _WIN64
-    setlocale(LC_ALL, "Portuguese");
-  #endif
+  setLingua();
 
   menuPrincipal();
 
