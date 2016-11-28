@@ -91,7 +91,7 @@ void menuPrincipal(){
         break;
       default:
         printf("\n Por favor selecione uma opção válida! \n");
-        sleep(3);
+      
         flag = 1;
     }
   } while(opc != '0' && opc != '1');

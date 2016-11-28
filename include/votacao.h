@@ -3,7 +3,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-// #include <stdio_ext.h>
+
+#ifdef linux
+  #include <stdio_ext.h>
+#endif
+ 
 
 typedef struct Voto {
 
