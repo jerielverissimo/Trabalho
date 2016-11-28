@@ -7,12 +7,12 @@ void limpaTela(){
 
     #endif
 
-    #ifndef _WIN64
-      system("cls");
-    #endif
-
-    // #ifdef _WIN32
+    // #ifndef _WIN64
     //   system("cls");
     // #endif
+
+    #ifdef _WIN32
+      system("cls");
+    #endif
 
 }
