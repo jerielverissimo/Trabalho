@@ -23,7 +23,7 @@ typedef struct Voto {
 } Voto;
 
 typedef struct Partido {
-
+  char *siglaPartido;
 } Partido;
 
 typedef struct Palamentar{
