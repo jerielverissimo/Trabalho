@@ -30,7 +30,7 @@ void votacaoAberta() {
 
           break;
       }
-      printf("\n\n [1] - Voto sim: \n [2] - Voto não: \n [3] - Encerrar a votação: \n\n %dNº votante  OPC: ", i + 1);
+      printf("\n\n [1] - Voto sim: \n [2] - Voto não: \n [3] - Encerrar a votação: \n\n %dº votante  OPC: ", i + 1);
       opc = getchar();
       clearBuffer();
       limpaTela();

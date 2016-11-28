@@ -4,9 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <locale.h>
+
 #ifdef linux
   #include <stdio_ext.h> // lib para __fpurge (limpar buffer do teclado)
 #endif
+
+
 
 
 typedef struct Voto {
