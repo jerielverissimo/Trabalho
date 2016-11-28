@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdio_ext.h>
+// #include <stdio_ext.h>
 
 typedef struct Voto {
 

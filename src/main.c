@@ -1,4 +1,4 @@
-#include "votacao.h"
+#include "../include/votacao.h"
 
 void menuVotacao(){
 

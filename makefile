@@ -1,5 +1,5 @@
 CC = gcc
-
+WW = x86_64-w64-mingw32-gcc
 CFLAGS = -I$(IDIR)
 
 IDIR = ./include/
@@ -11,7 +11,7 @@ all: votacao
 
 votacao:
 	$(CC) $(SOUCERS) $(CFLAGS) -o $@
-	$(CC) $(SOUCERS) $(CFLAGS) -o votacao.exe
+	$(ww) $(SOUCERS) $(CFLAGS) -o votacao.exe
 
 run:
 	./votacao
