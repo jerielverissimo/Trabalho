@@ -22,10 +22,14 @@ typedef struct Voto {
 
 } Voto;
 
+typedef struct Partido {
+
+} Partido;
+
 typedef struct Palamentar{
 
   int codPalamentar;
-  // Partidos partido;
+  Partido partidos;
   char estado[2];
   char sexo;
   Voto votos;
@@ -46,11 +50,11 @@ void setLingua(); // config para portugues (windows)
 void menuPrincipal();
 void menuVotacao();
 
-/* votaÃ§Ã£o secreta */
+/* votação secreta */
 void encerrarVotacaoSecreta(Voto votos, int votantes);
 void votacaoSecreta();
 
-/* votaÃ§Ã£o aberta */
+/* votação aberta */
 void votacaoAberta();
 
 #endif

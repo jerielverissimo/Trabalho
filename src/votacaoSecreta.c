@@ -1,6 +1,7 @@
 #include "../include/votacao.h"
 
 void votacaoSecreta(){
+  
   setLingua();
 
   Voto votos;
