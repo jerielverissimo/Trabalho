@@ -1,5 +1,6 @@
 #include "../include/votacao.h"
 
+
 void votacaoAberta() {
 
   setLingua();
@@ -16,33 +17,33 @@ void votacaoAberta() {
 
 
 
-  parlamentares = (Palamentar*) malloc(sizeof(nVotantes));
+  parlamentares = (Palamentar*) malloc(nVotantes * sizeof(Palamentar));
 
   getPartidos();
 
-
-  for (i = 0; i < nVotantes; i++) {
-    do {
-      printf("\n\n Insira o cï¿½digo do palamentar: ");
-      scanf("%d", &parlamentares ->codPalamentar);
-
-      printf("\n\n Escolha o partido: ");
-      opc = getchar();
-      switch (opc) {
-        case '1':
-
-          break;
-        case '2':
-
-          break;
-      }
-      printf("\n\n [1] - Voto sim: \n [2] - Voto nï¿½o: \n [3] - Encerrar a votaï¿½ï¿½o: \n\n %dï¿½ votante  OPC: ", i + 1);
-      opc = getchar();
-      clearBuffer();
-      limpaTela();
-
-    } while(opc != '3');
-  }
+  //
+  // for (i = 0; i < nVotantes; i++) {
+  //   do {
+  //     printf("\n\n Insira o código do palamentar: ");
+  //     scanf("%d", &parlamentares ->codPalamentar);
+  //
+  //     printf("\n\n Escolha o partido: ");
+  //     opc = getchar();
+  //     switch (opc) {
+  //       case '1':
+  //
+  //         break;
+  //       case '2':
+  //
+  //         break;
+  //     }
+  //     printf("\n\n [1] - Voto sim: \n [2] - Voto não: \n [3] - Encerrar a vota?ão: \n\n %dï¿½ votante  OPC: ", i + 1);
+  //     opc = getchar();
+  //     clearBuffer();
+  //     limpaTela();
+  //
+  //   } while(opc != '3');
+  // }
 
 
 }
