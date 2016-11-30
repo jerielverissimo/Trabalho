@@ -1,9 +1,9 @@
 #include "../include/votacao.h"
 
+
 void menuVotacao(){
 
-
-  char opc, flag = 0;
+  char opc, flag = 1;
 
   do {
 
@@ -42,18 +42,15 @@ void menuVotacao(){
         menuPrincipal();
         break;
       default:
+
         printf("\n Por favor selecione uma opção válida! \n");
-        flag = 1;
+        // sleep(3);
     }
   } while(opc != '0' && opc != '1' && opc !=  '2');
-
-
 }
 
 
 void menuPrincipal(){
-
-
 
   char opc, flag = 0;
 
@@ -90,12 +87,12 @@ void menuPrincipal(){
         exit(0);
         break;
       default:
+
         printf("\n Por favor selecione uma opção válida! \n");
 
-        flag = 1;
+        // sleep(3);
     }
   } while(opc != '0' && opc != '1');
-
 }
 
 

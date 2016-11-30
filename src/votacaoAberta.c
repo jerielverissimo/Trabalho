@@ -9,6 +9,7 @@ void votacaoAberta() {
   char opc;
 
   Palamentar *parlamentares;
+  Partido partidos[100];
 
   printf(" Insira o total de votantes: ");
   scanf("%d", &nVotantes);
@@ -19,31 +20,10 @@ void votacaoAberta() {
 
   parlamentares = (Palamentar*) malloc(nVotantes * sizeof(Palamentar));
 
-  getPartidos();
+  printf(" Inisra o código do palamentar\n");
+  scanf("%d", &parlamentares->codPalamentar);
+  clearBuffer();
 
-  //
-  // for (i = 0; i < nVotantes; i++) {
-  //   do {
-  //     printf("\n\n Insira o código do palamentar: ");
-  //     scanf("%d", &parlamentares ->codPalamentar);
-  //
-  //     printf("\n\n Escolha o partido: ");
-  //     opc = getchar();
-  //     switch (opc) {
-  //       case '1':
-  //
-  //         break;
-  //       case '2':
-  //
-  //         break;
-  //     }
-  //     printf("\n\n [1] - Voto sim: \n [2] - Voto não: \n [3] - Encerrar a vota?ão: \n\n %dï¿½ votante  OPC: ", i + 1);
-  //     opc = getchar();
-  //     clearBuffer();
-  //     limpaTela();
-  //
-  //   } while(opc != '3');
-  // }
-
+  
 
 }

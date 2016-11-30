@@ -3,11 +3,14 @@
 #define CAMINHO_DOS_PARTIDOS "/home/ghost/github/Trabalho/data/partidos.txt"
 
 
-void getPartidos(){
+Partido* geraPartidos(Partido *partido){
 
   char buffer[100];
   char res[100], *p;
-  int i;
+  int i, count = 0;
+
+
+  // partidos->siglaPartido = (char*) malloc(sizeof(Partido) * 100);
 
   FILE *fp;
   fp = fopen (CAMINHO_DOS_PARTIDOS,"r");
@@ -17,17 +20,18 @@ void getPartidos(){
 
     while (!feof(fp)) {
       fgets(buffer, 100, fp);
-
-      for (i = 0; i < 100; i++) {
-        if (buffer[i] == '-') {
-          p = &buffer[i + 1];
-          strcpy(res, p);
+      count++;
+        for (i = 0; i < 100; i++) {
+          if (buffer[i] == '-') {
+            p = &buffer[i + 1];
+            strcpy(partido->siglaPartido, p);
+            // pegaPartidos(partido, count);
+          }
         }
       }
 
-      
-    }
-
     fclose (fp);
   }
+
+  return partido;
 }

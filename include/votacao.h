@@ -25,7 +25,8 @@ typedef struct Voto {
 
 typedef struct Partido {
 
-  char *siglaPartido;
+  char siglaPartido[100];
+  
 
 } Partido;
 
@@ -39,6 +40,12 @@ typedef struct Palamentar{
 
 } Palamentar;
 
+
+/* MACROS */
+
+#ifndef MAX_PARTIDOS
+#define MAX_PARTIDOS 5
+#endif
 
 
 /* Cross-Compile */
@@ -58,6 +65,8 @@ void votacaoSecreta();
 
 /* votação aberta */
 void votacaoAberta();
-void getPartidos();
+Partido* geraPartidos(Partido*);
+void preparaMenu(Partido*);
+void pegaPartidos(Partido *partido, int);
 
 #endif
