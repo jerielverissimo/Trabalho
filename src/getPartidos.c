@@ -25,7 +25,7 @@ void getPartidos(){
         }
       }
 
-      printf("%s\n", res);
+      
     }
 
     fclose (fp);
